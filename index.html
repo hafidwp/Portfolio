@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth md:scroll-auto">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-neutral-100">
+  <body class="bg-neutral-100 scroll-smooth md:scroll-auto">
     <nav class="bg-white border-gray-100 shadow-xs">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
@@ -267,20 +267,90 @@
     <!-- Education End-->
 
     <!-- Projects -->
-    <section id="projects" class="py-12">
-      <div class="max-w-screen-xl mx-auto px-4 border border-red-500">
+    <section id="projects" class="py-12 bg-neutral-100">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Judul -->
         <h2 class="text-4xl font-bold text-neutral-900 mb-10 text-center">
           Projects 📚
         </h2>
 
-        <!-- Grid Card  -->
-        <div class="grid gap-6 sm:grid-2 lg:grid-cols-4">
+        <!-- Grid Card -->
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Card 1: Web Dev -->
           <div
             class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
-          ></div>
+          >
+            <img
+              src="./src/img/webdev.jpg"
+              alt="Web Dev"
+              class="w-auto h-auto rounded-lg mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+              Web Development
+            </h3>
+            <p class="text-neutral-600 text-sm text-justify mt-2 font-normal">
+              Kumpulan project terkait website, mulai dari landing page,
+              portfolio, hingga aplikasi berbasis web.
+            </p>
+          </div>
+
+          <!-- Card 2: UI/UX -->
+          <div
+            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="./src/img/figma.jfif"
+              alt="UI/UX"
+              class="w-auto h-auto rounded-lg mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+              UI / UX Design
+            </h3>
+            <p class="text-neutral-600 text-sm text-center mt-2">
+              Desain antarmuka dan pengalaman pengguna untuk aplikasi mobile
+              maupun website.
+            </p>
+          </div>
+
+          <!-- Card 3: Machine Learning -->
+          <div
+            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="./src/img/Google_Colaboratory.png"
+              alt="Machine Learning"
+              class="w-auto h-auto rounded-lg mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+              Machine Learning
+            </h3>
+            <p class="text-neutral-600 text-sm text-center mt-2">
+              Eksperimen dan implementasi model AI untuk computer vision, NLP,
+              dan analisis data.
+            </p>
+          </div>
+
+          <!-- Card 4: Data Analysis -->
+          <div
+            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="./src/img/Data Analys.png"
+              alt="Data Analysis"
+              class="w-auto h-auto rounded-lg mx-auto mb-4"
+            />
+            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+              Data Analysis
+            </h3>
+            <p class="text-neutral-600 text-sm text-center mt-2">
+              Visualisasi data, eksplorasi dataset, dan insight yang mendukung
+              pengambilan keputusan.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- Projects End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
