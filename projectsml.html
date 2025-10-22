@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Machine Learning</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-neutral-100 scroll-smooth md:scroll-auto">
+    <nav class="bg-white border-gray-100 shadow-xs">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
+      >
+        <a
+          href="https://www.linkedin.com/in/mochammad-hafidh/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="./src/img/linkedin.png" alt="LinkedIn" class="w-8" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap"
+            >Hafidh</span
+          ></a
+        >
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open Main Menu</span>
+          <img class="w-10" src="./src/img/menu.png" alt="menu" />
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 px-3 text-xl text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#education"
+                class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#projects"
+                class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="ml-projects" class="px-6 py-16 bg-gray-50 min-h-screen">
+      <!-- Title Section -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-800">
+          Machine Learning Projects
+        </h2>
+        <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
+          Kumpulan eksperimen dan implementasi algoritma machine learning
+          menggunakan data dummy dari berbagai sumber terbuka.
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="ml1-preview.png"
+            alt="ML Project Preview"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Klasifikasi Data Dummy Menggunakan Random Forest
+            </h3>
+            <p class="text-gray-600 text-sm mb-4 text-justify">
+              Implementasi algoritma Random Forest untuk mengklasifikasikan data
+              pelanggan berdasarkan fitur demografis yang telah ditentukan.
+            </p>
+            <div class="mb-4">
+              <p class="text-gray-800 font-semibold mb-1">Fitur Utama:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>Data cleaning & preprocessing</li>
+                <li>Pelatihan model klasifikasi</li>
+                <li>Evaluasi akurasi dan confusion matrix</li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <p class="text-gray-800 font-semibold mb-1">Teknologi:</p>
+              <p class="text-sm text-gray-600">
+                Python, Scikit-learn, Pandas, Matplotlib
+              </p>
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                data-modal-target="mlModal"
+                data-modal-toggle="mlModal"
+                class="text-[#ECD444] font-medium hover:underline"
+                onclick="openMLModal({
+              title: 'Klasifikasi Data Dummy Menggunakan Random Forest',
+              image: 'ml1-preview.png',
+              description: 'Proyek ini menggunakan algoritma Random Forest untuk mengklasifikasikan data pelanggan dummy berdasarkan fitur demografis. Tujuan utama adalah menguji performa model terhadap variasi jumlah pohon keputusan.',
+              features: [
+                'Data cleaning & preprocessing',
+                'Pelatihan model klasifikasi',
+                'Evaluasi akurasi dan confusion matrix'
+              ],
+              tech: 'Python, Scikit-learn, Pandas, Matplotlib'
+            })"
+              >
+                Lihat Detail
+              </button>
+              <a
+                href="#"
+                class="px-3 py-1 bg-[#ECD444] text-gray-900 text-sm font-semibold rounded-md hover:bg-[#d4bc3d]"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="ml2-preview.png"
+            alt="ML Project Preview"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Prediksi Harga Rumah Menggunakan Linear Regression
+            </h3>
+            <p class="text-gray-600 text-sm mb-4 text-justify">
+              Eksperimen dengan algoritma regresi linier dalam memprediksi harga
+              rumah berdasarkan fitur luas tanah dan jumlah kamar tidur.
+            </p>
+            <div class="mb-4">
+              <p class="text-gray-800 font-semibold mb-1">Fitur Utama:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>Visualisasi data menggunakan Matplotlib</li>
+                <li>Model training & evaluasi MSE</li>
+                <li>Plot hasil prediksi</li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <p class="text-gray-800 font-semibold mb-1">Teknologi:</p>
+              <p class="text-sm text-gray-600">
+                Python, Pandas, NumPy, Scikit-learn
+              </p>
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                data-modal-target="mlModal"
+                data-modal-toggle="mlModal"
+                class="text-[#ECD444] font-medium hover:underline"
+                onclick="openMLModal({
+              title: 'Prediksi Harga Rumah Menggunakan Linear Regression',
+              image: 'ml2-preview.png',
+              description: 'Eksperimen regresi linier sederhana untuk memprediksi harga rumah berdasarkan fitur numerik dan kategorikal seperti luas tanah, jumlah kamar, dan lokasi.',
+              features: [
+                'Visualisasi data menggunakan Matplotlib',
+                'Model training & evaluasi MSE',
+                'Plot hasil prediksi'
+              ],
+              tech: 'Python, Pandas, NumPy, Scikit-learn'
+            })"
+              >
+                Lihat Detail
+              </button>
+              <a
+                href="#"
+                class="px-3 py-1 bg-[#ECD444] text-gray-900 text-sm font-semibold rounded-md hover:bg-[#d4bc3d]"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="ml3-preview.png"
+            alt="ML Project Preview"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Clustering Data Pelanggan dengan K-Means
+            </h3>
+            <p class="text-gray-600 text-sm mb-4 text-justify">
+              Implementasi K-Means untuk mengelompokkan pelanggan secara
+              otomatis berdasarkan perilaku dan pola pembelian dari dataset
+              dummy.
+            </p>
+            <div class="mb-4">
+              <p class="text-gray-800 font-semibold mb-1">Fitur Utama:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>Normalisasi data</li>
+                <li>Penentuan jumlah cluster optimal</li>
+                <li>Visualisasi hasil clustering</li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <p class="text-gray-800 font-semibold mb-1">Teknologi:</p>
+              <p class="text-sm text-gray-600">
+                Python, Scikit-learn, Seaborn, Matplotlib
+              </p>
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <button
+                data-modal-target="mlModal"
+                data-modal-toggle="mlModal"
+                class="text-[#ECD444] font-medium hover:underline"
+                onclick="openMLModal({
+              title: 'Clustering Data Pelanggan dengan K-Means',
+              image: 'ml3-preview.png',
+              description: 'Proyek ini menerapkan algoritma K-Means untuk mengelompokkan pelanggan berdasarkan perilaku pembelian. Hasil clustering divisualisasikan untuk mengidentifikasi segmen pelanggan potensial.',
+              features: [
+                'Normalisasi data',
+                'Penentuan jumlah cluster optimal',
+                'Visualisasi hasil clustering'
+              ],
+              tech: 'Python, Scikit-learn, Seaborn, Matplotlib'
+            })"
+              >
+                Lihat Detail
+              </button>
+              <a
+                href="#"
+                class="px-3 py-1 bg-[#ECD444] text-gray-900 text-sm font-semibold rounded-md hover:bg-[#d4bc3d]"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Template (1 modal saja) -->
+    <div
+      id="mlModal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden fixed inset-0 z-50 flex justify-center items-center w-full p-4 overflow-y-auto bg-black/50"
+    >
+      <div class="relative w-full max-w-2xl">
+        <div class="relative bg-white rounded-lg shadow-lg">
+          <!-- Header -->
+          <div class="flex items-center justify-between p-4 border-b">
+            <h3
+              id="modalTitle"
+              class="text-lg font-semibold text-gray-900"
+            ></h3>
+            <button
+              type="button"
+              class="text-gray-400 hover:text-gray-900"
+              data-modal-hide="mlModal"
+            >
+              ✕
+            </button>
+          </div>
+          <!-- Body -->
+          <div class="p-6 space-y-4">
+            <img
+              id="modalImage"
+              src=""
+              alt="Project Preview"
+              class="rounded-lg mb-4 w-full"
+            />
+            <p id="modalDesc" class="text-gray-700 text-sm leading-relaxed"></p>
+            <div>
+              <p class="font-semibold text-gray-800 mb-1">Fitur Utama:</p>
+              <ul
+                id="modalFeatures"
+                class="list-disc list-inside text-sm text-gray-600 space-y-1"
+              ></ul>
+            </div>
+            <p>
+              <span class="font-semibold text-gray-800">Teknologi:</span>
+              <span id="modalTech" class="text-gray-600"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      function openMLModal(data) {
+        document.getElementById("modalTitle").textContent = data.title;
+        document.getElementById("modalImage").src = data.image;
+        document.getElementById("modalDesc").textContent = data.description;
+
+        const featureList = document.getElementById("modalFeatures");
+        featureList.innerHTML = "";
+        data.features.forEach((f) => {
+          const li = document.createElement("li");
+          li.textContent = f;
+          featureList.appendChild(li);
+        });
+
+        document.getElementById("modalTech").textContent = data.tech;
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

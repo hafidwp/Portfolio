@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Web Development</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-neutral-100 scroll-smooth md:scroll-auto">
+    <nav class="bg-white border-gray-100 shadow-xs">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
+      >
+        <a
+          href="https://www.linkedin.com/in/mochammad-hafidh/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="./src/img/linkedin.png" alt="LinkedIn" class="w-8" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap"
+            >Hafidh</span
+          ></a
+        >
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open Main Menu</span>
+          <img class="w-10" src="./src/img/menu.png" alt="menu" />
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 px-3 text-xl text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#education"
+                class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#projects"
+                class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="project-detail"
+      class="py-16 px-6 lg:px-20 bg-neutral-50 min-h-screen"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      <!-- Header -->
+      <div class="max-w-5xl mx-auto text-center mb-12">
+        <h1 class="text-4xl font-bold text-neutral-900 mb-2">RMT Bengkel</h1>
+        <p class="text-neutral-600 text-sm uppercase tracking-wider">
+          Web Development
+        </p>
+      </div>
+      <!-- Preview Gambar -->
+      <div class="max-w-5xl mx-auto mb-10 flex justify-center">
+        <img
+          src="./src/img/logowebdev.png"
+          alt="Rmt Bengkel"
+          class="rounded-2xl shadow-xl w-auto h-52"
+        />
+      </div>
+      <div
+        class="max-w-4xl mx-auto mb-12 text-justify text-neutral-700 leading-relaxed"
+      >
+        <h2 class="text-2xl font-semibold text-neutral-900 mb-4">
+          Deskripsi & Fitur Utama
+        </h2>
+        <p>
+          RMT Bengkel merupakan website landing page untuk jasa perbaikan
+          kendaraan motor dan mobil. Website ini berfokus pada tampilan yang
+          responsif serta kemudahan pengguna dalam mengakses layanan, melakukan
+          pemesanan, dan membaca informasi harga layanan. Fitur utamanya
+          mencakup:
+        </p>
+        <ul class="list-disc list-inside mt-4 space-y-2">
+          <li>Desain responsif dengan TailwindCSS.</li>
+          <li>
+            Formulir Pemesanan yang mendukung langsung terhubung ke Whatsapp.
+          </li>
+          <li>Integrasi Google Maps untuk menampilkan lokasi bengkel.</li>
+          <li>Optimasi Seo dengan menggunakan meta tag dinamis.</li>
+        </ul>
+      </div>
+      <!-- Tech -->
+      <div class="max-w-4xl mx-auto mb-12">
+        <h2 class="text-2xl font-semibold text-neutral-900 mb-4">
+          Teknologi yang Digunakan
+        </h2>
+        <div class="flex flex-wrap gap-3">
+          <span
+            class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium"
+            >HTML</span
+          >
+          <span
+            class="bg-sky-100 text-sky-700 px-4 py-1 rounded-full text-sm font-medium"
+            >TailwindCSS</span
+          >
+          <span
+            class="bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm font-medium"
+            >Javascript</span
+          >
+          <span
+            class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium"
+            >Github</span
+          >
+        </div>
+      </div>
+      <!-- Link Demo & Source Code -->
+      <div
+        class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 mb-12"
+      >
+        <a
+          href="https://dekor-jakarta.vercel.app/"
+          target="_blank"
+          class="px-6 py-3 bg-[#ECD444] text-neutral-900 font-semibold rounded-xl shadow-md hover:bg-[#D4B935] transition duration-300"
+          >Lihat Demo</a
+        >
+        <a
+          href="https://github.com/hafidwp/Dekor_Jakarta"
+          target="_blank"
+          class="px-6 py-3 border border-neutral-700 text-neutral-800 font-semibold rounded-xl hover:bg-neutral-800 hover:text-white transition duration-300"
+          >Lihat Source Code</a
+        >
+      </div>
+
+      <!-- Header -->
+      <div
+        class="max-w-5xl mx-auto text-center mb-12"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 class="text-4xl font-bold text-neutral-900 mb-2">Dekor Jakarta</h1>
+        <p class="text-neutral-600 text-sm uppercase tracking-wider">
+          Web Development
+        </p>
+      </div>
+      <!-- Preview Gambar -->
+      <div
+        class="max-w-5xl mx-auto mb-10 flex justify-center"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <img
+          src="./src/img/logo.jpg"
+          alt="Dekor Jakarta"
+          class="rounded-2xl shadow-xl w-auto h-52"
+        />
+      </div>
+      <div
+        class="max-w-4xl mx-auto mb-12 text-justify text-neutral-700 leading-relaxed"
+      >
+        <h2 class="text-2xl font-semibold text-neutral-900 mb-4">
+          Deskripsi & Fitur Utama
+        </h2>
+        <p>
+          Dekor Jakarta merupakan website company profile yang menampilkan
+          berbagai layanan jasa dekorasi acara seperti pernikahan, ulang tahun,
+          dan acara korporat. Website ini dirancang untuk menonjolkan estetika
+          visual yang elegan dan profesional, sekaligus memberikan kemudahan
+          bagi calon klien dalam menemukan informasi serta melakukan pemesanan
+          layanan secara daring.
+        </p>
+        <ul
+          class="list-disc list-inside mt-4 space-y-2"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <li>
+            Tampilan antarmuka elegan dengan warna dan tipografi yang
+            menonjolkan kesan profesional.
+          </li>
+          <li>
+            Bagian galeri interaktif untuk menampilkan hasil dekorasi dari
+            berbagai jenis acara.
+          </li>
+          <li>
+            Fitur formulir pemesanan cepat yang langsung terhubung dengan
+            WhatsApp Admin.
+          </li>
+          <li>
+            Optimasi tampilan agar tetap responsif di berbagai ukuran layar
+            perangkat.
+          </li>
+        </ul>
+      </div>
+      <!-- Tech -->
+      <div class="max-w-4xl mx-auto mb-12">
+        <h2
+          class="text-2xl font-semibold text-neutral-900 mb-4"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Teknologi yang Digunakan
+        </h2>
+        <div
+          class="flex flex-wrap gap-3"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <span
+            class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium"
+            >HTML</span
+          >
+          <span
+            class="bg-sky-100 text-sky-700 px-4 py-1 rounded-full text-sm font-medium"
+            >TailwindCSS</span
+          >
+          <span
+            class="bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm font-medium"
+            >Javascript</span
+          >
+          <span
+            class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium"
+            >AOS Animation</span
+          >
+          <span
+            class="bg-yellow-100 text-yellow-700 px-4 py-1 rounded-full text-sm font-medium"
+            >Vercel</span
+          >
+        </div>
+      </div>
+      <!-- Link Demo & Source Code -->
+      <div
+        class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 mb-12"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <a
+          href="https://hafidwp.github.io/Workshop-Car/"
+          target="_blank"
+          class="px-6 py-3 bg-[#ECD444] text-neutral-900 font-semibold rounded-xl shadow-md hover:bg-[#D4B935] transition duration-300"
+          >Lihat Demo</a
+        >
+        <a
+          href="https://github.com/hafidwp/Workshop-Car"
+          target="_blank"
+          class="px-6 py-3 border border-neutral-700 text-neutral-800 font-semibold rounded-xl hover:bg-neutral-800 hover:text-white transition duration-300"
+          >Lihat Source Code</a
+        >
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

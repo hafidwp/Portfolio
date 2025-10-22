@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-neutral-100 scroll-smooth md:scroll-auto">
     <nav class="bg-white border-gray-100 shadow-xs">
@@ -64,10 +65,15 @@
     <!-- Home -->
     <section id="home" class="rounded-b-4xl">
       <div
-        class="max-w-screen-xl mx-auto p-4 flex flex-wrap justify-between items-center lg:flex lg:flex-row md:flex md:items-center md:flex-col-reverse md:p-8"
+        class="max-w-screen-xl mx-auto p-4 flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-12 lg:gap-16 py-8"
       >
-        <div class="my-4 w-full md:w-1/2 flex flex-col justify-between">
-          <p class="text-lg font-medium text-justify md:text-lg">
+        <!-- Bagian teks -->
+        <div class="w-full md:w-1/2 flex flex-col justify-between">
+          <p
+            class="text-lg font-medium text-justify"
+            data-aos="fade-up-right"
+            data-aos-duration="2000"
+          >
             Hai, saya Hafidh 👋. Lulusan S1 Teknik Informatika di Universitas
             Krisnadwipayana. Saya suka mengeksplorasi teknologi, khususnya di
             bidang AI, Machine Learning, dan Computer Vision. Project terakhir
@@ -77,106 +83,102 @@
             untuk belajar hal baru dan mengerjakan project yang memberi dampak
             positif.
           </p>
+
           <div
-            class="mt-8 mb-4 flex lg:flex lg:flex-row justify-between space-x-3 align-center md:flex md:justify-between md:gap-4 md:my-8"
+            class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start"
+            data-aos="fade-up"
+            data-aos-duration="2500"
           >
-            <button
-              type="button"
-              class="rounded-lg relative h-12 w-40 overflow-hidden border border-sky-700 text-sky-700 hover:bg-sky-700/90 hover:text-white shadow-md transition-all duration-500"
+            <!-- Tombol LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/mochammad-hafidh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-lg h-12 w-40 flex justify-center items-center gap-2 border border-sky-700 text-sky-700 hover:bg-sky-700 hover:text-white shadow-md transition-all duration-300"
             >
-              <a
-                href="https://www.linkedin.com/in/mochammad-hafidh/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex justify-center items-center space-x-2 rtl:space-x-reverse"
-              >
-                <img
-                  src="./src/img/linkedin.png"
-                  alt="LinkedIn"
-                  class="w-6 relative z-10"
-                />
-                <span
-                  class="self-center text-md font-semibold whitespace-nowrap relative z-10"
-                  >LinkedIn</span
-                ></a
-              >
-            </button>
-            <button
-              type="button"
-              class="rounded-lg relative h-12 w-40 overflow-hidden border border-pink-600 text-pink-600 hover:bg-pink-600/90 hover:text-white shadow-md transition-all duration-500"
+              <img src="./src/img/linkedin.png" alt="LinkedIn" class="w-6" />
+              <span class="font-semibold">LinkedIn</span>
+            </a>
+
+            <!-- Tombol Instagram -->
+            <a
+              href="https://www.instagram.com/hafidwp_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-lg h-12 w-40 flex justify-center items-center gap-2 border border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white shadow-md transition-all duration-300"
             >
-              <a
-                href="https://www.instagram.com/hafidwp_"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex justify-center items-center space-x-2 rtl:space-x-reverse"
-              >
-                <img
-                  src="./src/img/instagram.png"
-                  alt="Instagram"
-                  class="w-6 relative z-10"
-                />
-                <span
-                  class="self-center text-md font-semibold whitespace-nowrap relative z-10"
-                  >Instagram</span
-                ></a
-              >
-            </button>
-            <button
-              type="button"
-              class="rounded-lg relative h-12 w-40 overflow-hidden border border-neutral-900 text-neutral-900 hover:z-0 hover:bg-neutral-700 hover:text-white shadow-md transition-all duration-500"
+              <img src="./src/img/instagram.png" alt="Instagram" class="w-6" />
+              <span class="font-semibold">Instagram</span>
+            </a>
+
+            <!-- Tombol GitHub -->
+            <a
+              href="https://github.com/hafidwp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-lg h-12 w-40 flex justify-center items-center gap-2 border border-neutral-900 text-neutral-900 hover:bg-neutral-700 hover:text-white shadow-md transition-all duration-300"
             >
-              <a
-                href="https://github.com/hafidwp"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex justify-center items-center space-x-2 rtl:space-x-reverse"
-              >
-                <img
-                  src="./src/img/github.png"
-                  alt="github"
-                  class="w-6 relative z-10"
-                />
-                <span
-                  class="self-center text-md font-semibold whitespace-nowrap relative z-10"
-                  >Github</span
-                ></a
-              >
-            </button>
+              <img src="./src/img/github.png" alt="Github" class="w-6" />
+              <span class="font-semibold">Github</span>
+            </a>
           </div>
-          <div class="mt-12 md:mt-2 lg:text-left md:text-center">
-            <button
-              class="rounded-xl relative h-12 w-40 overflow-hidden border border-blue-500 text-blue-500 shadow-2xl transition-all duration-500 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-blue-500 before:duration-500 before:ease-out hover:text-white hover:shadow-blue-500 hover:before:h-40 hover:before:w-40 hover:before:opacity-80"
+
+          <div
+            class="mt-8 text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <a
+              href="./public/CV_Mochammad-Hafidh.pdf"
+              download="CV_Mochammad-Hafidh"
+              class="rounded-xl h-12 w-40 flex justify-center items-center border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white shadow-md transition-all duration-300"
             >
-              <a
-                href="./public/CV_Mochammad-Hafidh.pdf"
-                download="CV_Mochammad-Hafidh"
-              >
-                <span class="relative z-10">Download CV</span>
-              </a>
-            </button>
+              <span>Download CV</span>
+            </a>
           </div>
         </div>
-        <div class="my-4">
+
+        <!-- Bagian gambar -->
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
-            src="./src/img/Profile.jpg"
+            src="./src/img/profile.png"
             alt="Hafidh"
-            class="w-90 rounded-4xl shadow-2xl"
+            class="rounded-3xl shadow-2xl max-w-xs md:max-w-sm w-full object-cover"
+            data-aos="fade-up-left"
+            data-aos-duration="2000"
           />
         </div>
       </div>
     </section>
+
     <!-- Home End -->
     <!-- arrow -->
     <div class="flex justify-center my-10">
-      <a class="animate-bounce" href="#education"
-        ><img class="w-12" src="./src/img/arrow.png" alt="arrow"
-      /></a>
+      <a href="#education" class="cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="size-16 animate-bounce text-[#ECD444]"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </a>
     </div>
-    <!-- arrow End -->
 
     <!-- Education -->
-    <section id="education" class="py-12">
+    <section
+      id="education"
+      class="py-12"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div class="max-w-screen-md mx-auto px-4">
         <!-- Judul Section -->
         <h1 class="text-4xl font-bold text-neutral-900 mb-10 text-center">
@@ -211,7 +213,7 @@
           </li>
 
           <!-- Item 2 -->
-          <li class="mb-10 ml-6">
+          <li class="mb-10 ml-6 hidden more-education">
             <span
               class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-green-500 ring-8 ring-neutral-100"
             >
@@ -236,7 +238,7 @@
           </li>
 
           <!-- Item 3 -->
-          <li class="mb-10 ml-6">
+          <li class="mb-10 ml-6 hidden more-education">
             <span
               class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 ring-8 ring-neutral-100"
             >
@@ -262,90 +264,131 @@
             </p>
           </li>
         </ol>
+        <div class="text-center mt-4">
+          <button
+            id="toogle-education"
+            class="text-[#ECD444] bg-[#6E2594] py-2 px-4 rounded-lg font-semibold hover:underline transition-all duration-300"
+          >
+            Lihat lebih lengkap ↓
+          </button>
+        </div>
       </div>
     </section>
     <!-- Education End-->
 
     <!-- Projects -->
-    <section id="projects" class="py-12 bg-neutral-100">
-      <div class="max-w-screen-xl mx-auto px-4">
+    <section
+      id="projects"
+      class="py-12 bg-[#ECD444] rounded-4xl"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="max-w-screen mx-auto px-4">
         <!-- Judul -->
-        <h2 class="text-4xl font-bold text-neutral-900 mb-10 text-center">
+        <h2 class="text-4xl font-bold text-[#6E2594] mb-10 text-center">
           Projects 📚
         </h2>
 
         <!-- Grid Card -->
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 p-4">
           <!-- Card 1: Web Dev -->
           <div
-            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+            class="bg-[#6E2594] shadow-md rounded-xl p-6 border-2 border-[#ECD444] hover:shadow-lg transition duration-300 hover:rotate-1"
           >
             <img
               src="./src/img/webdev.jpg"
               alt="Web Dev"
-              class="w-auto h-auto rounded-lg mx-auto mb-4"
+              class="w-full h-auto rounded-lg mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+            <h3 class="text-xl font-semibold text-[#ECD444] text-center">
               Web Development
             </h3>
-            <p class="text-neutral-600 text-sm text-justify mt-2 font-normal">
-              Kumpulan project terkait website, mulai dari landing page,
-              portfolio, hingga aplikasi berbasis web.
+            <p class="text-neutral-50 text-sm mt-2 text-justify font-normal">
+              Pembuatan dan pengembangan website statis seperti landing page
+              yang menekankan tampilan responsif dan fungsional.
             </p>
+            <div class="text-right mt-4">
+              <a
+                href="projects-webdev.html"
+                class="text-[#ECD444] font-medium hover:underline"
+                >Lihat Project →
+              </a>
+            </div>
           </div>
 
           <!-- Card 2: UI/UX -->
           <div
-            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+            class="bg-[#6E2594] shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300 hover:rotate-1"
           >
             <img
               src="./src/img/figma.jfif"
               alt="UI/UX"
-              class="w-auto h-auto rounded-lg mx-auto mb-4"
+              class="w-full h-45 rounded-lg mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+            <h3 class="text-xl font-semibold text-[#ECD444] text-center">
               UI / UX Design
             </h3>
-            <p class="text-neutral-600 text-sm text-center mt-2">
-              Desain antarmuka dan pengalaman pengguna untuk aplikasi mobile
-              maupun website.
+            <p class="text-neutral-50 text-sm mt-2 text-justify font-normal">
+              Perancangan antarmuka dan pengalaman pengguna interaktif untuk
+              aplikasi mobile serta website secara optimal.
             </p>
+            <div class="text-right mt-4">
+              <a
+                href="projects-uiux.html"
+                class="text-[#ECD444] font-medium hover:underline"
+                >Lihat Project →
+              </a>
+            </div>
           </div>
 
           <!-- Card 3: Machine Learning -->
           <div
-            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+            class="bg-[#6E2594] shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300 hover:-rotate-1"
           >
             <img
               src="./src/img/Google_Colaboratory.png"
               alt="Machine Learning"
-              class="w-auto h-auto rounded-lg mx-auto mb-4"
+              class="w-full h-42 rounded-lg mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+            <h3 class="text-xl font-semibold text-[#ECD444] text-center">
               Machine Learning
             </h3>
-            <p class="text-neutral-600 text-sm text-center mt-2">
-              Eksperimen dan implementasi model AI untuk computer vision, NLP,
-              dan analisis data.
+            <p class="text-neutral-50 text-sm mt-2 text-justify font-normal">
+              Eksperimen dan penerapan model kecerdasan buatan untuk analisis
+              data, pengenalan citra, dan pemrosesan bahasa alami.
             </p>
+            <div class="text-right mt-4">
+              <a
+                href="projectsml.html"
+                class="text-[#ECD444] font-medium hover:underline"
+                >Lihat Project →
+              </a>
+            </div>
           </div>
 
           <!-- Card 4: Data Analysis -->
           <div
-            class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+            class="bg-[#6E2594] shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300 hover:-rotate-1"
           >
             <img
               src="./src/img/Data Analys.png"
               alt="Data Analysis"
-              class="w-auto h-auto rounded-lg mx-auto mb-4"
+              class="w-full h-43 rounded-lg mx-auto mb-4"
             />
-            <h3 class="text-xl font-semibold text-neutral-800 text-center">
+            <h3 class="text-xl font-semibold text-[#ECD444] text-center">
               Data Analysis
             </h3>
-            <p class="text-neutral-600 text-sm text-center mt-2">
-              Visualisasi data, eksplorasi dataset, dan insight yang mendukung
-              pengambilan keputusan.
+            <p class="text-neutral-50 text-sm mt-2 text-justify font-normal">
+              Analisis, eksplorasi, dan visualisasi data untuk menghasilkan
+              insight yang mendukung proses pengambilan keputusan.
             </p>
+            <div class="text-right mt-4">
+              <a
+                href="projects-da.html"
+                class="text-[#ECD444] font-medium hover:underline"
+                >Lihat Project →
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -354,5 +397,24 @@
     <!-- Projects End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const toogleButton = document.getElementById("toogle-education");
+      const hiddenItems = document.querySelectorAll(".more-education");
+      let isExpanded = false;
+
+      toogleButton.addEventListener("click", () => {
+        isExpanded = !isExpanded;
+        hiddenItems.forEach((item) => {
+          item.classList.toggle("hidden");
+        });
+        toogleButton.textContent = isExpanded
+          ? "Sembunyikan ↑"
+          : "Lihat Selengkapnya ↓";
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Web Development</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-neutral-100 scroll-smooth md:scroll-auto">
+    <nav class="bg-white border-gray-100 shadow-xs">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
+      >
+        <a
+          href="https://www.linkedin.com/in/mochammad-hafidh/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="./src/img/linkedin.png" alt="LinkedIn" class="w-8" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap"
+            >Hafidh</span
+          ></a
+        >
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open Main Menu</span>
+          <img class="w-10" src="./src/img/menu.png" alt="menu" />
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="/index.html"
+                class="block py-2 px-3 text-xl text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#education"
+                class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html#projects"
+                class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Card Project Machine Learning ===== -->
+    <div
+      class="bg-white shadow-md rounded-xl p-6 border border-neutral-200 hover:shadow-lg transition duration-300"
+    >
+      <img
+        src="./src/img/Google_Colaboratory.png"
+        alt="Machine Learning"
+        class="w-full h-auto rounded-lg mx-auto mb-4"
+      />
+      <h3 class="text-xl font-semibold text-neutral-800 text-center">
+        Klasifikasi Jenis Beras Menggunakan CNN
+      </h3>
+      <p class="text-neutral-600 text-sm mt-2 text-justify font-normal">
+        Eksperimen penerapan Convolutional Neural Network (CNN) untuk
+        mengklasifikasikan jenis beras berdasarkan bentuk bulir menggunakan
+        dataset citra.
+      </p>
+
+      <!-- Tombol Lihat Detail -->
+      <div class="flex justify-center mt-4">
+        <button
+          onclick="openModal('modal-ml')"
+          class="text-[#ECD444] font-medium hover:underline"
+        >
+          Lihat Detail →
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== Modal Detail Project ===== -->
+    <div
+      id="modal-ml"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
+    >
+      <div
+        class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative animate-fadeIn"
+      >
+        <!-- Tombol Close -->
+        <button
+          onclick="closeModal('modal-ml')"
+          class="absolute top-3 right-4 text-neutral-600 hover:text-black text-xl font-bold"
+        >
+          &times;
+        </button>
+
+        <!-- Isi Modal -->
+        <h2 class="text-2xl font-semibold text-neutral-900 mb-4">
+          Klasifikasi Jenis Beras dengan CNN
+        </h2>
+
+        <img
+          src="./src/img/rice_cnn_result.png"
+          alt="Preview Hasil"
+          class="rounded-lg mb-4"
+        />
+
+        <h3 class="text-lg font-semibold text-neutral-800 mb-2">Deskripsi</h3>
+        <p class="text-sm text-neutral-700 mb-4 text-justify">
+          Proyek ini bertujuan untuk mengimplementasikan model Convolutional
+          Neural Network (CNN) dalam mengklasifikasikan lima jenis beras
+          berdasarkan bentuk bulirnya. Dataset diperoleh secara primer dan
+          sekunder, lalu melalui tahap preprocessing sebelum dilatih dengan
+          model CNN. Hasil pengujian menunjukkan akurasi mencapai 93% pada data
+          uji.
+        </p>
+
+        <h3 class="text-lg font-semibold text-neutral-800 mb-2">
+          Teknologi yang Digunakan
+        </h3>
+        <ul class="list-disc pl-5 text-sm text-neutral-700 mb-4">
+          <li>Python (Google Colab)</li>
+          <li>TensorFlow dan Keras</li>
+          <li>OpenCV untuk preprocessing citra</li>
+          <li>Matplotlib untuk visualisasi hasil</li>
+        </ul>
+
+        <!-- Tombol Eksternal -->
+        <div class="flex justify-between mt-6">
+          <a
+            href="https://colab.research.google.com/"
+            target="_blank"
+            class="text-white bg-[#ECD444] hover:bg-yellow-400 px-4 py-2 rounded-lg font-semibold transition"
+          >
+            Buka di Colab
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="text-[#ECD444] font-medium hover:underline"
+          >
+            Lihat di GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Script Modal ===== -->
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.remove("hidden");
+        document.getElementById(id).classList.add("flex");
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).classList.add("hidden");
+        document.getElementById(id).classList.remove("flex");
+      }
+    </script>
+
+    <!-- ===== Animasi Fade In (Opsional, bisa taruh di CSS global) ===== -->
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.2s ease-in-out;
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
