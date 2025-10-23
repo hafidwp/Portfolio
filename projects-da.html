@@ -37,7 +37,7 @@
           >
             <li>
               <a
-                href="/index.html"
+                href="index.html"
                 class="block py-2 px-3 text-xl text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
                 >Home</a
@@ -45,14 +45,14 @@
             </li>
             <li>
               <a
-                href="/index.html#education"
+                href="index.html#education"
                 class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Education</a
               >
             </li>
             <li>
               <a
-                href="/index.html#projects"
+                href="index.html#projects"
                 class="block py-2 px-3 text-xl text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >Projects</a
               >
@@ -97,7 +97,9 @@
       class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
     >
       <div
-        class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative animate-fadeIn"
+        class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative"
+        data-aos="fade-down"
+        data-aos-duration="3000"
       >
         <!-- Tombol Close -->
         <button
@@ -170,24 +172,6 @@
         document.getElementById(id).classList.remove("flex");
       }
     </script>
-
-    <!-- ===== Animasi Fade In (Opsional, bisa taruh di CSS global) ===== -->
-    <style>
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: scale(0.98);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-      .animate-fadeIn {
-        animation: fadeIn 0.2s ease-in-out;
-      }
-    </style>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
