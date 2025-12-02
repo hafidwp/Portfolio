@@ -81,30 +81,36 @@
           class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
         >
           <img
-            src="ml1-preview.png"
+            src="/src/img/mlprojects.png"
             alt="ML Project Preview"
             class="w-full h-48 object-cover"
           />
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">
-              Klasifikasi Data Dummy Menggunakan Random Forest
+              Identifikasi Jenis Jenis Beras Menggunakan YoloV9
             </h3>
             <p class="text-gray-600 text-sm mb-4 text-justify">
-              Implementasi algoritma Random Forest untuk mengklasifikasikan data
-              pelanggan berdasarkan fitur demografis yang telah ditentukan.
+              Implementasi algoritma CNN dengan menggunakan arsitektur YoloV9
+              untuk mengklasifikasikan Jenis Jenis Beras berdasarkan warna,
+              bentuk, dan tekstur yang telah ditentukan.
             </p>
             <div class="mb-4">
               <p class="text-gray-800 font-semibold mb-1">Fitur Utama:</p>
               <ul class="list-disc list-inside text-sm text-gray-600 space-y-1">
+                <li>Pengambilan gambar beras</li>
                 <li>Data cleaning & preprocessing</li>
+                <li>Labeling dan Augmentasi data</li>
                 <li>Pelatihan model klasifikasi</li>
-                <li>Evaluasi akurasi dan confusion matrix</li>
+                <li>
+                  Evaluasi akurasi dengan confusion matrix, precision, dan
+                  recall
+                </li>
               </ul>
             </div>
             <div class="mb-4">
               <p class="text-gray-800 font-semibold mb-1">Teknologi:</p>
               <p class="text-sm text-gray-600">
-                Python, Scikit-learn, Pandas, Matplotlib
+                Python, Matplotlib, Roboflow. YoloV9
               </p>
             </div>
             <div class="flex items-center justify-between mt-4">
@@ -113,21 +119,23 @@
                 data-modal-toggle="mlModal"
                 class="text-[#ECD444] font-medium hover:underline"
                 onclick="openMLModal({
-              title: 'Klasifikasi Data Dummy Menggunakan Random Forest',
-              image: 'ml1-preview.png',
-              description: 'Proyek ini menggunakan algoritma Random Forest untuk mengklasifikasikan data pelanggan dummy berdasarkan fitur demografis. Tujuan utama adalah menguji performa model terhadap variasi jumlah pohon keputusan.',
+              title: 'Identifikasi Jenis Jenis Beras Menggunakan YoloV9',
+              image: './src/img/mlprojects.png',
+              description: 'Proyek ini menggunakan algoritma CNN dengan menggunakan arsitektur YoloV9 untuk mengklasifikasikan data beras berdasarkan warna, bentuk, dan tekstur. Tujuan utama adalah menguji performa model terhadap variasi warna, bentuk, dan tekstur beras.',
               features: [
+                'Pengambilan gambar beras',
                 'Data cleaning & preprocessing',
+                'Labeling dan Augmentasi data',
                 'Pelatihan model klasifikasi',
-                'Evaluasi akurasi dan confusion matrix'
+                'Evaluasi akurasi dan confusion matrix, precision, dan recall'
               ],
-              tech: 'Python, Scikit-learn, Pandas, Matplotlib'
+              tech: 'Python, Matplotlib, Roboflow. YoloV9'
             })"
               >
                 Lihat Detail
               </button>
               <a
-                href="#"
+                href="https://github.com/hafidwp/Tugas-Akhir---Yolov9-Klasifikasi-Jenis-Beras/"
                 class="px-3 py-1 bg-[#ECD444] text-gray-900 text-sm font-semibold rounded-md hover:bg-[#d4bc3d]"
               >
                 Source Code
@@ -137,7 +145,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div
+        <!-- <div
           class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
         >
           <img
@@ -194,10 +202,10 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Card 3 -->
-        <div
+        <!-- <div
           class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
         >
           <img
@@ -255,7 +263,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
